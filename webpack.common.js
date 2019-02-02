@@ -1,9 +1,8 @@
-var HtmlWebPackPlugin = require("html-webpack-plugin");
+var styleLintPlugin = require("stylelint-webpack-plugin");
 var path = require("path");
 
 module.exports = {
 	module: {
-		entry: "index.js",
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
@@ -17,6 +16,10 @@ module.exports = {
 						loader: "html-loader"
 					}
 				]
+			},
+			{
+				test: /\.scss$/,
+				use: ["style-loader", "css-loader", "sass-loader"]
 			}
 		]
 	},
@@ -25,9 +28,13 @@ module.exports = {
 		filename: "bundle.js"
 	},
 	plugins: [
-		new HtmlWebPackPlugin({
-			template: "./dist/index.html",
-			filename: "./index.html"
+		new styleLintPlugin({
+			configFile: ".stylelintrc",
+			context: "src",
+			files: "**/*.scss",
+			failOnError: false,
+			quiet: false,
+			syntax: "scss"
 		})
 	]
 };

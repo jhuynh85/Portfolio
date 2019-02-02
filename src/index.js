@@ -5,6 +5,3 @@ import "./index.scss";
 import App from "./App";
 
 ReactDOM.render(<App />, document.getElementById("app"));
-
-// Enable Hot Module Replacement
-// module.hot.accept()
