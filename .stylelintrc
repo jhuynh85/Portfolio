@@ -3,7 +3,9 @@
     "stylelint-scss"
   ],
   "rules": {
-    "no-empty-source": null
+    "no-empty-source": null,
+    "no-descending-specificity": null,
+    "block-no-empty": null
   },
   "extends": ["stylelint-config-recommended","stylelint-config-recommended-scss"]
 }
