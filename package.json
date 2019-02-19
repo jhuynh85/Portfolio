@@ -11,6 +11,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
+		"@babel/plugin-proposal-class-properties": "^7.3.3",
 		"@babel/preset-env": "^7.3.1",
 		"@babel/preset-react": "^7.0.0",
 		"babel-eslint": "^10.0.1",
@@ -21,6 +22,7 @@
 		"eslint-loader": "^2.1.1",
 		"eslint-plugin-prettier": "^3.0.1",
 		"eslint-plugin-react": "^7.12.4",
+		"file-loader": "^3.0.1",
 		"html-loader": "^0.5.5",
 		"node-sass": "^4.11.0",
 		"prettier": "^1.16.3",
@@ -37,10 +39,10 @@
 		"webpack-merge": "^4.2.1"
 	},
 	"dependencies": {
-		"node-bourbon": "^4.2.8",
 		"path": "^0.12.7",
 		"prop-types": "^15.6.2",
 		"react": "^16.7.0",
-		"react-dom": "^16.7.0"
+		"react-dom": "^16.7.0",
+		"react-rotating-text": "^1.2.1"
 	}
 }

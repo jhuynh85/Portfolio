@@ -1,8 +1,18 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
+
+$font-stack: "Montserrat", sans-serif;
+$header-font: "Raleway", sans-serif;
+$break-small: 800px;
+$primary-color: #f9d342;
+$background-color: #292826;
+
+* {
+	box-sizing: border-box;
+}
 
 body {
+	width: 100%;
+	margin: 0;
 	font-family: $font-stack;
 	color: $primary-color;
-	font-weight: bold;
 }

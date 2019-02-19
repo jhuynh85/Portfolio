@@ -3,7 +3,7 @@
 	"plugins": ["react", "prettier"],
 	"rules": {
 		"prettier/prettier": "error",
-		"max-len": ["error", 80]
+		"no-console": 0
 	},
 	"env": {
 		"browser": true,

@@ -1,0 +1,110 @@
+@import "../../../index";
+
+$height: 900px;
+
+%title-text-shared {
+	text-shadow: 0 0 10px $background-color;
+	font-weight: bold;
+}
+
+.hero {
+	width: 100%;
+	height: $height + 50px;
+	--yPos: 0;
+
+	img {
+		width: 100%;
+		height: $height;
+		object-fit: cover;
+		object-position: top;
+	}
+
+	.title-text-container {
+		width: 25%;
+		transform: translate(265%, 220px);
+	}
+
+	.title-text {
+		@extend %title-text-shared;
+		color: white;
+		font-size: 1.5rem;
+		font-family: $header-font;
+	}
+
+	.rotating-text {
+		@extend %title-text-shared;
+		font-size: 3.5rem;
+		font-family: $header-font;
+	}
+
+	.hero-item {
+		position: absolute;
+		will-change: transform;
+
+		&:nth-child(1) {
+			transform: translateY(calc(var(--yPos) * -0.3));
+			z-index: 1;
+		}
+
+		&:nth-child(2) {
+			z-index: 2;
+		}
+
+		&:nth-child(3) {
+			transform: translateY(calc(var(--yPos) * -0.6));
+			z-index: 3;
+		}
+	}
+
+	.parallax {
+		position: fixed;
+	}
+}
+
+.react-rotating-text-cursor {
+	color: white;
+	animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+		infinite;
+}
+
+@keyframes blinking-cursor {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: $break-small) {
+	$height: 500px;
+
+	.hero {
+		height: $height;
+
+		img {
+			height: $height;
+		}
+
+		.title-text-container {
+			visibility: hidden;
+		}
+	}
+}
+
+.fade-out {
+	-webkit-transition: 1.5s;
+	-moz-transition: 1.5s;
+	-o-transition: 1.5s;
+	transition: 1.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.show {
+	opacity: 1;
+	visibility: visible;
+}

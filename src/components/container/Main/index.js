@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 import "./Main.scss";
 
+import Hero from "../../presentational/Hero";
+
 class Main extends Component {
 	render() {
 		return (
-			<section className="head">
-				<a href="" data-bf="web developer" data-af="photographer">
-					JOSEPH HUYNH
-				</a>
-			</section>
+			<div className={"main"}>
+				<Hero />
+				<div className={"text"}>
+					<span>Text here</span>
+					<span>Text here</span>
+					<span>Text here</span>
+					<span>Text here</span>
+					<span>Text here</span>
+				</div>
+			</div>
 		);
 	}
 }
