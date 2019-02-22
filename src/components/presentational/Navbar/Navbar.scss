@@ -1,0 +1,29 @@
+@import "../../../index";
+
+$left-right-padding: 10px;
+$top-bottom-padding: 10px;
+
+.navbar {
+	font-weight: bold;
+	// Remove bullets, margins, and padding
+	ul {
+		z-index: 5;
+		display: flex;
+		width: 100%;
+		background-color: rgba($background-color, 0.8);
+		position: fixed;
+		list-style-type: none;
+		margin: 0;
+	}
+
+	li {
+		display: inline;
+		padding: $top-bottom-padding $left-right-padding;
+		cursor: pointer;
+
+		&:hover {
+			color: $background-color;
+			background-color: $primary-color;
+		}
+	}
+}
