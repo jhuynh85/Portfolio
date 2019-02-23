@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "./Navbar.scss";
 
 class Navbar extends Component {
 	render() {
 		return (
 			<div className={"navbar no-select"}>
-				<ul>
+				<ul className={this.props.fade ? "navbar-fade-out" : "navbar-fade-in"}>
 					<li>HOME</li>
 					<li>ABOUT</li>
 					<li>WORK</li>
@@ -15,5 +16,9 @@ class Navbar extends Component {
 		);
 	}
 }
+
+Navbar.propTypes = {
+	fade: PropTypes.bool
+};
 
 export default Navbar;

@@ -1,18 +1,25 @@
 @import "../../../index";
 
-$left-right-padding: 10px;
+$default-navbar-transparency: 0.8;
+$left-right-padding: 15px;
 $top-bottom-padding: 10px;
 
 .navbar {
+	position: absolute;
 	font-weight: bold;
+	letter-spacing: 2px;
+	text-shadow: 0 0 10px $background-color;
+
 	// Remove bullets, margins, and padding
 	ul {
 		z-index: 5;
 		display: flex;
+		justify-content: flex-end;
 		width: 100%;
-		background-color: rgba($background-color, 0.8);
+		background-color: rgba($background-color, $default-navbar-transparency);
 		position: fixed;
 		list-style-type: none;
+		padding-right: 40px;
 		margin: 0;
 	}
 
@@ -24,6 +31,27 @@ $top-bottom-padding: 10px;
 		&:hover {
 			color: $background-color;
 			background-color: $primary-color;
+			text-shadow: none;
 		}
 	}
+}
+
+.navbar-fade-out {
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	background-color: rgba($background-color, 0) !important;
+}
+
+.navbar-fade-in {
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+	background-color: rgba(
+		$background-color,
+		$default-navbar-transparency
+	) !important;
+	padding: 5px 0;
 }
