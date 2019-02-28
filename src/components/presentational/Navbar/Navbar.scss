@@ -55,3 +55,9 @@ $top-bottom-padding: 10px;
 	) !important;
 	padding: 5px 0;
 }
+
+@media screen and (max-width: $break-small) {
+	li {
+		visibility: hidden;
+	}
+}

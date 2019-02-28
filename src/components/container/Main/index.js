@@ -3,6 +3,7 @@ import "./Main.scss";
 
 import Hero from "../../presentational/Hero";
 import Navbar from "../../presentational/Navbar";
+import BurgerMenu from "../../presentational/BurgerMenu";
 
 class Main extends Component {
 	constructor(props) {
@@ -40,9 +41,10 @@ class Main extends Component {
 		const { yPosition } = this.state;
 		return (
 			<div className="main">
+				<BurgerMenu right pageWrapId="content" outerContainerId="main" />
 				<Navbar fade={yPosition === 0} />
 				<Hero yPosition={yPosition} />
-				<div className="text">
+				<div className="content">
 					<span>Text here</span>
 					<span>Text here</span>
 					<span>Text here</span>

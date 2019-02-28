@@ -58,6 +58,7 @@
 		"path": "^0.12.7",
 		"prop-types": "^15.6.2",
 		"react": "^16.7.0",
+		"react-burger-menu": "^2.6.5",
 		"react-dom": "^16.7.0",
 		"react-rotating-text": "^1.2.1"
 	}
