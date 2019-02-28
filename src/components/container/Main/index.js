@@ -12,6 +12,17 @@ class Main extends Component {
 		};
 	}
 
+	componentDidMount() {
+		window.addEventListener("scroll", this.handleScroll, {
+			capture: false,
+			passive: true
+		});
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener("scroll", this.handleScroll);
+	}
+
 	handleScroll = () => {
 		const yPosition = window.scrollY;
 		document
@@ -25,23 +36,13 @@ class Main extends Component {
 		this.setState({ yPosition: newYPosition });
 	};
 
-	componentDidMount() {
-		window.addEventListener("scroll", this.handleScroll, {
-			capture: false,
-			passive: true
-		});
-	}
-
-	componentWillUnmount() {
-		window.removeEventListener("scroll", this.handleScroll);
-	}
-
 	render() {
+		const { yPosition } = this.state;
 		return (
-			<div className={"main"}>
-				<Navbar fade={this.state.yPosition === 0} />
-				<Hero yPosition={this.state.yPosition} />
-				<div className={"text"}>
+			<div className="main">
+				<Navbar fade={yPosition === 0} />
+				<Hero yPosition={yPosition} />
+				<div className="text">
 					<span>Text here</span>
 					<span>Text here</span>
 					<span>Text here</span>
