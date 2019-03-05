@@ -4,7 +4,7 @@
 	"description": "Personal portfolio for Joseph Huynh",
 	"main": "index.js",
 	"scripts": {
-		"start": "webpack-dev-server --config ./webpack.dev.js --mode development --open",
+		"start": "webpack-dev-server --config ./webpack.dev.js --mode development --open --host 192.168.0.101",
 		"build": "webpack --config ./webpack.prod.js --mode production"
 	},
 	"husky": {
@@ -60,6 +60,7 @@
 		"react": "^16.7.0",
 		"react-burger-menu": "^2.6.5",
 		"react-dom": "^16.7.0",
-		"react-rotating-text": "^1.2.1"
+		"react-rotating-text": "^1.2.1",
+		"react-scroll": "^1.7.11"
 	}
 }
