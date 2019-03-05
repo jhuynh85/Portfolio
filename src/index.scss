@@ -1,10 +1,27 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto|Roboto+Slab");
 
-$font-stack: "Montserrat", sans-serif;
+// Klimt color scheme
+$ivory-black: #1d2731;
+$gold-leaf: #d9b310;
+$sky-blue: #328cc1;
+$prussian-blue: #0b3c5d;
+
+// Dark horse color scheme
+$are-ya-yellow: #feda6a;
+$silver-fox: #d4d4dc;
+$deep-matte-grey: #393f4d;
+$dark-slate: #1d1e22;
+
+$font-stack: "Roboto", sans-serif;
 $header-font: "Raleway", sans-serif;
+$header-font2: "Roboto Slab", serif;
 $break-small: 800px;
-$primary-color: #f9d342;
-$background-color: #292826;
+//$primary-color: #f9d342;
+//$background-color: #292826;
+$primary-color: white;
+$secondary-color: $are-ya-yellow;
+$primary-bg-color: $dark-slate;
+$secondary-bg-color: $deep-matte-grey;
 
 * {
 	box-sizing: border-box;
@@ -15,6 +32,33 @@ body {
 	margin: 0;
 	font-family: $font-stack;
 	color: $primary-color;
+}
+
+%h-shared {
+	font-family: $header-font2;
+	font-weight: bold;
+	color: $secondary-color;
+	margin: 0;
+}
+
+h1 {
+	@extend %h-shared;
+	font-size: 2rem;
+}
+
+h4 {
+	@extend %h-shared;
+}
+
+// Common styling for front end and back end lists
+%list {
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+	background-color: $sky-blue;
+	//border: 2px solid $sky-blue;
+	border-radius: 5px;
+	color: $silver-fox;
 }
 
 .no-select {

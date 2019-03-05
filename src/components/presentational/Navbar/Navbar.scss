@@ -5,34 +5,47 @@ $left-right-padding: 15px;
 $top-bottom-padding: 10px;
 
 .navbar {
-	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+	width: 100%;
+	position: fixed;
 	font-weight: bold;
 	letter-spacing: 2px;
-	text-shadow: 0 0 10px $background-color;
+	text-shadow: 0 0 10px $primary-bg-color;
+	margin: 0;
 
 	// Remove bullets, margins, and padding
 	ul {
-		z-index: 5;
 		display: flex;
-		justify-content: flex-end;
-		width: 100%;
-		background-color: rgba($background-color, $default-navbar-transparency);
-		position: fixed;
 		list-style-type: none;
-		padding-right: 40px;
+		padding: 0 40px;
 		margin: 0;
 	}
 
 	li {
-		display: inline;
 		padding: $top-bottom-padding $left-right-padding;
 		cursor: pointer;
+		color: $secondary-color;
 
 		&:hover {
-			color: $background-color;
-			background-color: $primary-color;
+			color: $primary-bg-color;
+			background-color: $secondary-color;
 			text-shadow: none;
 		}
+	}
+
+	.logo-text {
+		margin-left: 40px;
+		display: block;
+		font-family: "Roboto", sans-serif;
+		font-weight: bold;
+		font-size: 1.5rem;
+		color: $secondary-color;
+		font-variant: small-caps;
+		min-width: 200px;
+		z-index: 5;
 	}
 }
 
@@ -41,7 +54,7 @@ $top-bottom-padding: 10px;
 	-moz-transition: 1s;
 	-o-transition: 1s;
 	transition: 1s;
-	background-color: rgba($background-color, 0) !important;
+	background-color: rgba($primary-bg-color, 0) !important;
 }
 
 .navbar-fade-in {
@@ -50,14 +63,16 @@ $top-bottom-padding: 10px;
 	-o-transition: 1s;
 	transition: 1s;
 	background-color: rgba(
-		$background-color,
+		$primary-bg-color,
 		$default-navbar-transparency
 	) !important;
 	padding: 5px 0;
 }
 
 @media screen and (max-width: $break-small) {
-	li {
-		visibility: hidden;
+	.navbar {
+		li {
+			visibility: hidden;
+		}
 	}
 }
