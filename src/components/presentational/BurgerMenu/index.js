@@ -8,7 +8,9 @@ const BurgerMenu = props => {
 	return (
 		<Menu {...props}>
 			{LINKS.map(link => (
-				<span>{link}</span>
+				<span className="link" key={link}>
+					{link}
+				</span>
 			))}
 		</Menu>
 	);

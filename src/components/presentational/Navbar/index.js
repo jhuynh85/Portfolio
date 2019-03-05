@@ -7,10 +7,14 @@ import { LINKS } from "../../../utils/constants";
 const Navbar = props => {
 	const { fade } = props;
 	return (
-		<div className="navbar no-select">
-			<ul className={fade ? "navbar-fade-out" : "navbar-fade-in"}>
+		<div
+			className={`navbar no-select ${
+				fade ? "navbar-fade-out" : "navbar-fade-in"
+			}`}>
+			<div className="logo-text" />
+			<ul>
 				{LINKS.map(link => (
-					<li>{link}</li>
+					<li key={link}>{link}</li>
 				))}
 			</ul>
 		</div>

@@ -4,7 +4,8 @@ import ReactRotatingText from "react-rotating-text";
 import "./Hero.scss";
 
 import wallpaperForeground from "../../../images/wallpaper-foreground-2160x1100.png";
-import wallpaperBackground from "../../../images/wallpaper-background-2160x1100.jpg";
+import wallpaperForegroundCompressed from "../../../images/wallpaper-foreground-2160x1100-compressed.webp";
+import wallpaperBackground from "../../../images/wallpaper-background-2160x1100-compressed.jpg";
 
 const Hero = props => {
 	const { yPosition } = props;
@@ -27,12 +28,10 @@ const Hero = props => {
 					items={["HTML", "CSS", "REACT", "NODE", "JQUERY", "MONGODB", "MYSQL"]}
 				/>
 			</div>
-			<img
-				id="wallpaperForeground"
-				className="hero-item parallax"
-				src={wallpaperForeground}
-				alt="Foreground"
-			/>
+			<picture className="hero-item parallax">
+				<source srcSet={wallpaperForegroundCompressed} type="image/webp" />
+				<img src={wallpaperForeground} alt="Foreground" />
+			</picture>
 		</div>
 	);
 };

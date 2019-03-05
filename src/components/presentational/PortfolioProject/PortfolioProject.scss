@@ -1,0 +1,51 @@
+@import "../../../index";
+
+$ease-time: 0.25s;
+
+figure.portfolio-project {
+	position: relative;
+	width: 50%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 12px;
+	background-color: $primary-bg-color;
+
+	figcaption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		transition: opacity $ease-time ease-in-out;
+		-moz-transition: opacity $ease-time ease-in-out;
+		-webkit-transition: opacity $ease-time ease-in-out;
+		display: flex;
+		flex-direction: column;
+	}
+
+	img {
+		width: 100%;
+		visibility: visible;
+		opacity: 1;
+		transition: all $ease-time ease-in-out;
+		-moz-transition: all $ease-time ease-in-out;
+		-webkit-transition: all $ease-time ease-in-out;
+	}
+
+	&:hover {
+		img {
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(1.15);
+		}
+
+		figcaption {
+			opacity: 1;
+		}
+	}
+
+	// Span full width of parent container on mobile
+	@media (max-width: $break-small) {
+		width: 100%;
+	}
+}
