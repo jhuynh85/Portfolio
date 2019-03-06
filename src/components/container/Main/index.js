@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { PROJECTS } from "../../../utils/constants";
 import "./Main.scss";
 
 import Hero from "../../presentational/Hero";
@@ -64,10 +65,10 @@ class Main extends Component {
 							<p>
 								I’m Joseph. I'm a full stack developer based in San Diego who
 								enjoys creating software solutions for real-world problems.
-								Since beginning my journey as a developer over a year ago, I've
+								Since beginning my web development journey over a year ago, I've
 								worked on web applications for non-profits, collaborated with
-								talented people, and am constantly seeking to improve my craft
-								and striving to build first-class digital products by combining
+								talented people, and am constantly working to improve my craft.
+								I strive to build first-class digital products by combining
 								industry best-practices with clean, maintainable code.
 							</p>
 							<div className="about-container">
@@ -104,10 +105,20 @@ class Main extends Component {
 					<div className="dark-bg">
 						<section className="projects">
 							<h1>My Recent Work</h1>
+							<br />
 							<div className="projects-container">
-								<PortfolioProject imgSrc={furryFosterPic} />
-								<PortfolioProject imgSrc={vroomsPic} />
-								<PortfolioProject imgSrc={farmilyPic} />
+								<PortfolioProject
+									imgSrc={furryFosterPic}
+									project={PROJECTS.furryFoster}
+								/>
+								<PortfolioProject
+									imgSrc={vroomsPic}
+									project={PROJECTS.vrooms}
+								/>
+								<PortfolioProject
+									imgSrc={farmilyPic}
+									project={PROJECTS.farmily}
+								/>
 							</div>
 						</section>
 					</div>

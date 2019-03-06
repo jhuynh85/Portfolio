@@ -82,8 +82,12 @@
 		}
 	}
 
-	.projects-container {
-		display: flex;
-		flex-wrap: wrap;
+	section.projects {
+		text-align: center;
+		width: 85%;
+		.projects-container {
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 }

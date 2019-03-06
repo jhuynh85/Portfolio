@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto|Roboto+Slab");
 
+// Break points
+$break-small: 800px;
+$break-medium: 1200px;
+
 // Klimt color scheme
 $ivory-black: #1d2731;
 $gold-leaf: #d9b310;
@@ -15,7 +19,6 @@ $dark-slate: #1d1e22;
 $font-stack: "Roboto", sans-serif;
 $header-font: "Raleway", sans-serif;
 $header-font2: "Roboto Slab", serif;
-$break-small: 800px;
 //$primary-color: #f9d342;
 //$background-color: #292826;
 $primary-color: white;
@@ -48,6 +51,7 @@ h1 {
 
 h4 {
 	@extend %h-shared;
+	font-size: 1.15rem;
 }
 
 // Common styling for front end and back end lists
@@ -61,10 +65,28 @@ h4 {
 	color: $silver-fox;
 }
 
+// Class to disable highlighting/selecting of element
 .no-select {
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer/Edge */
 	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+button {
+	cursor: pointer;
+	font-family: $font-stack;
+	font-weight: bold;
+	border: 2px solid $secondary-color;
+	background-color: $prussian-blue;
+	color: $primary-color;
+	border-radius: 40px;
+	padding: 10px;
+	margin: 0 5px;
+
+	&:hover {
+		background-color: $secondary-color;
+		color: $prussian-blue;
+	}
 }
