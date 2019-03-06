@@ -4,7 +4,7 @@ export const PROJECTS = {
 	furryFoster: {
 		name: "Furry Foster",
 		description:
-			"An organization dedicated to ending the euthanasia of adoptable pets by connecting them with loving foster families",
+			"Allows users to post and search for animals available for adoption or fostering",
 		github: "https://github.com/jhuynh85/furry-foster",
 		web: "https://furryfoster.herokuapp.com"
 	},
@@ -17,7 +17,8 @@ export const PROJECTS = {
 	},
 	farmily: {
 		name: "Farmily",
-		description: "Find and review San Diego farmers’ market vendors ",
+		description:
+			"Uses the Yelp API to let users find and write reviews for San Diego farmer's market vendors ",
 		github: "https://github.com/jhuynh85/farmily",
 		web: "https://farmily.herokuapp.com"
 	}
