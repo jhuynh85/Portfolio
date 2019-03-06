@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import ReactRotatingText from "react-rotating-text";
 import "./Hero.scss";
 
-import wallpaperForeground from "../../../images/wallpaper-foreground-2160x1100.png";
-import wallpaperForegroundCompressed from "../../../images/wallpaper-foreground-2160x1100-compressed.webp";
-import wallpaperBackground from "../../../images/wallpaper-background-2160x1100-compressed.jpg";
+import wallpaperForeground from "../../../assets/images/wallpaper-foreground-2160x1100.png";
+import wallpaperForegroundCompressed from "../../../assets/images/wallpaper-foreground-2160x1100-compressed.webp";
+import wallpaperBackground from "../../../assets/images/wallpaper-background-2160x1100-compressed.jpg";
 
 const Hero = props => {
 	const { yPosition } = props;

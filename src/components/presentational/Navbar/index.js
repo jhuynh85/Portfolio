@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 import "./Navbar.scss";
 
-import { LINKS } from "../../../utils/constants";
+import { LINKS } from "../../../assets/js/constants";
 
 const Navbar = props => {
 	const { fade } = props;

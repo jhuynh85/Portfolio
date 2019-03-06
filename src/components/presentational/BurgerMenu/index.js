@@ -3,7 +3,7 @@ import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 import "./BurgerMenu.scss";
 
-import { LINKS } from "../../../utils/constants";
+import { LINKS } from "../../../assets/js/constants";
 
 const BurgerMenu = props => {
 	return (

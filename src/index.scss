@@ -1,30 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto|Roboto+Slab");
-
-// Break points
-$break-small: 800px;
-$break-medium: 1000px;
-
-// Klimt color scheme
-$ivory-black: #1d2731;
-$gold-leaf: #d9b310;
-$sky-blue: #328cc1;
-$prussian-blue: #0b3c5d;
-
-// Dark horse color scheme
-$are-ya-yellow: #feda6a;
-$silver-fox: #d4d4dc;
-$deep-matte-grey: #393f4d;
-$dark-slate: #1d1e22;
-
-$font-stack: "Roboto", sans-serif;
-$header-font: "Raleway", sans-serif;
-$header-font2: "Roboto Slab", serif;
-//$primary-color: #f9d342;
-//$background-color: #292826;
-$primary-color: white;
-$secondary-color: $are-ya-yellow;
-$primary-bg-color: $dark-slate;
-$secondary-bg-color: $deep-matte-grey;
+@import "assets/scss/shared";
+@import "assets/scss/scrollDownIndicator";
 
 * {
 	box-sizing: border-box;
