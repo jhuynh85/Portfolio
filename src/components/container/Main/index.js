@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Element } from "react-scroll";
+import { Link, Element } from "react-scroll";
 import "./Main.scss";
-import { PROJECTS } from "../../../utils/constants";
+import { PROJECTS } from "../../../assets/js/constants";
 
 import Hero from "../../presentational/Hero";
 import Navbar from "../../presentational/Navbar";
@@ -10,10 +10,10 @@ import Footer from "../../presentational/Footer";
 import FrontEndList from "../../presentational/FrontEndList";
 import PortfolioProject from "../../presentational/PortfolioProject";
 
-import profilePic from "../../../images/profile.jpg";
-import furryFosterPic from "../../../images/furry-foster-mockup.png";
-import vroomsPic from "../../../images/vrooms-mockup.png";
-import farmilyPic from "../../../images/farmily-mockup.png";
+import profilePic from "../../../assets/images/profile.jpg";
+import furryFosterPic from "../../../assets/images/furry-foster-mockup.png";
+import vroomsPic from "../../../assets/images/vrooms-mockup.png";
+import farmilyPic from "../../../assets/images/farmily-mockup.png";
 import BackendList from "../../presentational/BackEndList";
 import DevToolsList from "../../presentational/DevToolsList";
 
@@ -63,6 +63,11 @@ class Main extends Component {
 				<Navbar fade={yPosition === 0} />
 				<Hero yPosition={yPosition} />
 				<div className="content">
+					{yPosition === 0 && (
+						<Link to="ABOUT" smooth offset={-50} duration={250}>
+							<span className="scroll-down-indicator" />
+						</Link>
+					)}
 					<div className="dark-bg">
 						<section>
 							<Element name="ABOUT" />
