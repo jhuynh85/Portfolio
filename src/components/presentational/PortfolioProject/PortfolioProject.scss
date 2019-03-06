@@ -48,7 +48,7 @@ figure.portfolio-project {
 	}
 
 	// Span full width of parent container on mobile
-	@media (max-width: $break-small) {
+	@media (max-width: $break-medium) {
 		width: 100%;
 	}
 }

@@ -2,7 +2,7 @@
 
 // Break points
 $break-small: 800px;
-$break-medium: 1200px;
+$break-medium: 1000px;
 
 // Klimt color scheme
 $ivory-black: #1d2731;
@@ -56,13 +56,39 @@ h4 {
 
 // Common styling for front end and back end lists
 %list {
-	padding: 10px;
-	margin-bottom: 10px;
-	width: 200px;
-	background-color: $sky-blue;
-	//border: 2px solid $sky-blue;
-	border-radius: 5px;
-	color: $silver-fox;
+	background-color: $prussian-blue;
+	border-radius: 12px;
+	padding: 20px;
+	margin: 20px;
+	width: 33%;
+	max-width: 400px;
+	min-width: 250px;
+	color: $primary-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	@media (max-width: $break-small) {
+		width: 100%;
+	}
+
+	ul {
+		//font-family: $header-font2;
+		color: $secondary-color;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			font-weight: bold;
+		}
+	}
+
+	i {
+		color: $secondary-color;
+	}
 }
 
 // Class to disable highlighting/selecting of element
@@ -79,14 +105,14 @@ button {
 	font-family: $font-stack;
 	font-weight: bold;
 	border: 2px solid $secondary-color;
-	background-color: $prussian-blue;
-	color: $primary-color;
+	background-color: $secondary-color;
+	color: $prussian-blue;
 	border-radius: 40px;
 	padding: 10px;
 	margin: 0 5px;
 
-	&:hover {
-		background-color: $secondary-color;
-		color: $prussian-blue;
+	&:active {
+		background-color: $prussian-blue;
+		color: $secondary-color;
 	}
 }

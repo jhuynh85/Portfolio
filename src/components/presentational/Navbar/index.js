@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-scroll";
 import "./Navbar.scss";
 
 import { LINKS } from "../../../utils/constants";
@@ -14,7 +15,9 @@ const Navbar = props => {
 			<div className="logo-text" />
 			<ul>
 				{LINKS.map(link => (
-					<li key={link}>{link}</li>
+					<Link to={link} smooth offset={-50} duration={250}>
+						<li key={link}>{link}</li>
+					</Link>
 				))}
 			</ul>
 		</div>
