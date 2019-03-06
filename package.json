@@ -7,7 +7,7 @@
 		"start": "webpack-dev-server --config ./webpack.dev.js --mode development --open --host 192.168.0.101",
 		"build": "webpack --config ./webpack.prod.js --mode production",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d dist"
 	},
 	"homepage": "http://jhuynh85.github.io/portfolio",
 	"husky": {
