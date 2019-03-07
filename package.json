@@ -4,7 +4,7 @@
 	"description": "Personal portfolio for Joseph Huynh",
 	"main": "index.js",
 	"scripts": {
-		"start": "webpack-dev-server --config ./webpack.dev.js --mode development --open --host 192.168.0.101",
+		"start": "webpack-dev-server --config ./webpack.dev.js --mode development --open",
 		"build": "webpack --config ./webpack.prod.js --mode production",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist"

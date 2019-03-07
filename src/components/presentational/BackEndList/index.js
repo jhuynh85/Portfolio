@@ -8,7 +8,7 @@ const BackendList = () => {
 			<br />
 			<h4>Back End</h4>
 			<p>
-				From integrating Amazon Web Services into your project to setting up
+				From implementing image uploads to AWS S3 buckets to setting up
 				protected API endpoints, I'm equally at home on the server-side.
 			</p>
 			<section>
@@ -18,6 +18,8 @@ const BackendList = () => {
 					<li>MongoDB</li>
 					<li>MySQL</li>
 					<li>Firebase</li>
+					<li>Amazon Web Services (EC2, S3)</li>
+					<li>PassportJS</li>
 				</ul>
 			</section>
 		</div>

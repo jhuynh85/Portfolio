@@ -8,8 +8,8 @@ const DevToolsList = () => {
 			<br />
 			<h4>Dev Tools</h4>
 			<p>
-				I use my experience with a wide array of development tools to help me
-				accomplish tasks quickly and efficiently.
+				I use a wide array of development tools to maintain a clean and
+				efficient codebase and minimize bugs.
 			</p>
 			<section>
 				<ul>

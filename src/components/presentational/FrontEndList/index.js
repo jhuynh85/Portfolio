@@ -17,7 +17,7 @@ const FrontEndList = () => {
 					<li>CSS3</li>
 					<li>jQuery</li>
 					<li>React</li>
-					<li>JavaScript&nbsp;(ES6)</li>
+					<li>JavaScript (ES6)</li>
 					<li>Bootstrap</li>
 					<li>Bulma</li>
 				</ul>

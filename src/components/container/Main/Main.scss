@@ -114,4 +114,10 @@
 			padding: 0 0 0 50px;
 		}
 	}
+
+	section.contact {
+		@media (max-width: $break-small) {
+			text-align: center;
+		}
+	}
 }

@@ -92,15 +92,7 @@ class Main extends Component {
 									<ul>
 										<li>I grew up in Canada</li>
 										<li>I prefer tabs over spaces</li>
-										<li>
-											<a
-												href="https://www.jetbrains.com/webstorm/"
-												target="_blank"
-												rel="noopener noreferrer">
-												Webstorm
-											</a>{" "}
-											is my IDE of choice
-										</li>
+										<li> Webstorm is my IDE of choice</li>
 									</ul>
 								</div>
 							</div>
@@ -138,7 +130,7 @@ class Main extends Component {
 						</section>
 					</div>
 					<div className="light-bg">
-						<section>
+						<section className="contact">
 							<Element name="CONTACT" />
 							<h1>Contact me.</h1>
 							<p>
