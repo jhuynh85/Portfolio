@@ -8,14 +8,15 @@ import Navbar from "../../presentational/Navbar";
 import BurgerMenu from "../../presentational/BurgerMenu";
 import Footer from "../../presentational/Footer";
 import FrontEndList from "../../presentational/FrontEndList";
+import BackendList from "../../presentational/BackEndList";
+import DevToolsList from "../../presentational/DevToolsList";
 import PortfolioProject from "../../presentational/PortfolioProject";
 
 import profilePic from "../../../assets/images/profile.jpg";
 import furryFosterPic from "../../../assets/images/furry-foster-mockup.png";
 import vroomsPic from "../../../assets/images/vrooms-mockup.png";
 import farmilyPic from "../../../assets/images/farmily-mockup.png";
-import BackendList from "../../presentational/BackEndList";
-import DevToolsList from "../../presentational/DevToolsList";
+import hangmanPic from "../../../assets/images/hangman-mockup.png";
 
 class Main extends Component {
 	constructor(props) {
@@ -125,6 +126,10 @@ class Main extends Component {
 								<PortfolioProject
 									imgSrc={farmilyPic}
 									project={PROJECTS.farmily}
+								/>
+								<PortfolioProject
+									imgSrc={hangmanPic}
+									project={PROJECTS.hangman}
 								/>
 							</div>
 						</section>

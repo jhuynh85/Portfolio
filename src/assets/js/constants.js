@@ -21,5 +21,12 @@ export const PROJECTS = {
 			"Uses the Yelp API to let users find and write reviews for San Diego farmer's market vendors ",
 		github: "https://github.com/jhuynh85/farmily",
 		web: "https://farmily.herokuapp.com"
+	},
+	hangman: {
+		name: "Mike Tyson's Super Hangman Punchout!",
+		description:
+			"A hangman game based on the 1987 Nintendo game. React frontend with Express backend routes to add/remove new words.",
+		github: "https://github.com/jhuynh85/react-super-hangman-punchout",
+		web: "https://hangman-react-edition.herokuapp.com/"
 	}
 };
