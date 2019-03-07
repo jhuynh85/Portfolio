@@ -66,6 +66,7 @@ typings/
 /dist/*
 !/dist/index.html
 !/dist/favicon.ico
+!/dist/CNAME
 
 # misc
 .vscode
