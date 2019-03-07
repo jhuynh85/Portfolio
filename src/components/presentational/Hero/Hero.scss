@@ -1,6 +1,6 @@
 @import "../../../index";
 
-$height: 900px;
+$height: 100vh;
 
 %title-text-shared {
 	text-shadow: 0 0 10px $primary-bg-color;
@@ -9,7 +9,7 @@ $height: 900px;
 
 .hero {
 	width: 100%;
-	height: $height + 50px;
+	height: calc(#{$height} - 50px);
 	--yPos: 0;
 
 	img {
@@ -43,6 +43,7 @@ $height: 900px;
 		will-change: transform;
 
 		&:nth-child(1) {
+			width: 100%;
 			transform: translateY(calc(var(--yPos) * -0.25));
 			z-index: 1;
 		}
@@ -52,6 +53,7 @@ $height: 900px;
 		}
 
 		&:nth-child(3) {
+			width: 100%;
 			transform: translateY(calc(var(--yPos) * -0.7));
 			z-index: 3;
 		}
