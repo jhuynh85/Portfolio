@@ -74,9 +74,9 @@ class Main extends Component {
 							<Element name="ABOUT" />
 							<h1>Thanks for stopping by.</h1>
 							<p>
-								I’m Joseph. I'm a full stack developer based in San Diego who
-								enjoys creating software solutions for real-world problems.
-								Since beginning my web development journey over a year ago, I've
+								I’m Joseph, a full stack developer based in San Diego who enjoys
+								creating software solutions for real-world problems. Since
+								beginning my web development journey over a year ago, I've
 								worked on web applications for non-profits, collaborated with
 								talented people, and am constantly working to improve my craft.
 								I strive to build first-class digital products by combining
