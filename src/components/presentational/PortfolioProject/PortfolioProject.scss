@@ -34,7 +34,7 @@ figure.portfolio-project {
 	}
 
 	&:hover {
-		background-color: $prussian-blue;
+		background-color: $primary-bg-color;
 
 		img {
 			opacity: 0;
@@ -50,5 +50,17 @@ figure.portfolio-project {
 	// Span full width of parent container on mobile
 	@media (max-width: $break-medium) {
 		width: 100%;
+	}
+
+	button {
+		cursor: pointer;
+		font-family: $font-stack;
+		font-weight: bold;
+		border: 2px solid $secondary-color;
+		background-color: $secondary-color;
+		color: $primary-bg-color;
+		border-radius: 40px;
+		padding: 10px;
+		margin: 0 5px;
 	}
 }
