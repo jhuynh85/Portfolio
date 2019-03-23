@@ -13,7 +13,7 @@ body {
 	color: $primary-color;
 }
 
-%h-shared {
+@mixin h-shared() {
 	font-family: $header-font2;
 	font-weight: bold;
 	color: $secondary-color;
@@ -21,12 +21,12 @@ body {
 }
 
 h1 {
-	@extend %h-shared;
+	@include h-shared();
 	font-size: 2rem;
 }
 
 h4 {
-	@extend %h-shared;
+	@include h-shared();
 	font-size: 1.15rem;
 }
 
