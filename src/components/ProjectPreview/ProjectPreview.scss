@@ -1,8 +1,8 @@
-@import "../../../index";
+@import "../../index";
 
-$ease-time: 0.25s;
+$ease-time: 250ms;
 
-figure.portfolio-project {
+figure.project-preview {
 	position: relative;
 	width: 50%;
 	padding: 10px;
@@ -16,9 +16,13 @@ figure.portfolio-project {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		opacity: 0;
-		transition: opacity $ease-time ease-in-out;
-		-moz-transition: opacity $ease-time ease-in-out;
-		-webkit-transition: opacity $ease-time ease-in-out;
+		visibility: hidden;
+		transition: opacity $ease-time ease-in-out,
+			visibility 0ms ease-in-out $ease-time;
+		-moz-transition: opacity $ease-time ease-in-out,
+			visibility 0ms ease-in-out $ease-time;
+		-webkit-transition: opacity $ease-time ease-in-out,
+			visibility 0ms ease-in-out $ease-time;
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -26,7 +30,6 @@ figure.portfolio-project {
 
 	img {
 		width: 100%;
-		visibility: visible;
 		opacity: 1;
 		transition: all $ease-time ease-in-out;
 		-moz-transition: all $ease-time ease-in-out;
@@ -38,12 +41,12 @@ figure.portfolio-project {
 
 		img {
 			opacity: 0;
-			visibility: hidden;
 			transform: scale(1.15);
 		}
 
 		figcaption {
 			opacity: 1;
+			visibility: visible;
 		}
 	}
 
