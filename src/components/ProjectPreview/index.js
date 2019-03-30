@@ -1,17 +1,28 @@
 import React from "react";
+import { Link as RouteLink } from "react-router-dom";
 import PropTypes from "prop-types";
-import "./PortfolioProject.scss";
+import "./ProjectPreview.scss";
+import Tag from "../Tag";
 
 const PortfolioProject = props => {
-	const { imgSrc, project } = props;
+	const { imgSrc, project, link } = props;
 	const { name, description, github, web } = project;
 	return (
-		<figure className="portfolio-project">
+		<figure className="project-preview">
 			<img className="no-select" src={imgSrc} alt="" />
 			<figcaption>
 				<h4>{name}</h4>
 				<p>{description}</p>
 				<div>
+					<Tag />
+					<Tag />
+					<Tag />
+					<Tag />
+				</div>
+				<div>
+					<RouteLink to={link}>
+						<button type="button">More info</button>
+					</RouteLink>
 					<a href={github} target="_blank" rel="noopener noreferrer">
 						<button type="button">
 							View Github <i className="fab fa-github-alt" />

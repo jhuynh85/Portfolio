@@ -1,5 +1,5 @@
 import React from "react";
-import "./BackendList.scss";
+import "./BackEndList.scss";
 
 const BackendList = () => {
 	return (

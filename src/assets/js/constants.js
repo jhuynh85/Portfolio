@@ -13,12 +13,12 @@ export const PROJECTS = {
 		description:
 			"Create VR experiences on your browser or VR headset by uploading 360-degree images or videos",
 		github: "https://github.com/jhuynh85/VRooms",
-		web: "https://v-rooms.herokuapp.com/"
+		web: "https://v-rooms.herokuapp.com"
 	},
 	farmily: {
 		name: "Farmily",
 		description:
-			"Uses the Yelp API to let users find and write reviews for San Diego farmer's market vendors ",
+			"Uses the Yelp API to let users find and write reviews for San Diego farmer's market vendors",
 		github: "https://github.com/jhuynh85/farmily",
 		web: "https://farmily.herokuapp.com"
 	},

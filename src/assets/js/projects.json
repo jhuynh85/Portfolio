@@ -1,0 +1,50 @@
+{
+	"furryFoster": {
+		"name": "Furry Foster",
+		"shortDescription": "Allows users to post and search for animals available for adoption or fostering",
+		"longDescription": "",
+		"myResponsibilities": [""],
+		"projectImages": [""],
+		"githubLink": "https://github.com/jhuynh85/furry-foster",
+		"siteLink": "https://furryfoster.herokuapp.com",
+		"technologiesUsed": [
+			"Node",
+			"Express",
+			"React",
+			"Redux",
+			"MongoDB",
+			"PassportJS",
+			"Bulma"
+		]
+	},
+	"vrooms": {
+		"name": "V-Rooms",
+		"shortDescription": "Create VR experiences on your browser or VR headset by uploading 360-degree images or videos",
+		"longDescription": "",
+		"myResponsibilities": [""],
+		"projectImages": [""],
+		"githubLink": "https://github.com/jhuynh85/VRooms",
+		"siteLink": "https://v-rooms.herokuapp.com",
+		"technologiesUsed": [""]
+	},
+	"farmily": {
+		"name": "Farmily",
+		"shortDescription": "Uses the Yelp API to let users find and write reviews for San Diego farmer's market vendors",
+		"longDescription": "",
+		"myResponsibilities": [""],
+		"projectImages": [""],
+		"githubLink": "",
+		"siteLink": "",
+		"technologiesUsed": [""]
+	},
+	"hangman": {
+		"name": "Mike Tyson's Super Hangman Punchout (React Edition)",
+		"longDescription": "A hangman game based on the 1987 Nintendo game. React frontend with Express backend routes to add/remove new words.",
+		"shortDescription": "",
+		"myResponsibilities": [""],
+		"projectImages": [""],
+		"githubLink": "",
+		"siteLink": "",
+		"technologiesUsed": [""]
+	}
+}

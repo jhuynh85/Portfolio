@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-scroll";
 import "./Navbar.scss";
 
-import { LINKS } from "../../../assets/js/constants";
+import { LINKS } from "../../assets/js/constants";
 
 const Navbar = props => {
 	const { fade } = props;
@@ -15,8 +15,8 @@ const Navbar = props => {
 			<div className="logo-text" />
 			<ul>
 				{LINKS.map(link => (
-					<Link to={link} smooth offset={-50} duration={250}>
-						<li key={link}>{link}</li>
+					<Link key={link} to={link} smooth offset={-50} duration={250}>
+						<li>{link}</li>
 					</Link>
 				))}
 			</ul>
