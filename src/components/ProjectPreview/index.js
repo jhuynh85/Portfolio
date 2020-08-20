@@ -2,7 +2,6 @@ import React from "react";
 import { Link as RouteLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./ProjectPreview.scss";
-import Tag from "../Tag";
 
 const PortfolioProject = props => {
 	const { imgSrc, project, link } = props;
@@ -13,12 +12,6 @@ const PortfolioProject = props => {
 			<figcaption>
 				<h4>{name}</h4>
 				<p>{description}</p>
-				<div>
-					<Tag />
-					<Tag />
-					<Tag />
-					<Tag />
-				</div>
 				<div>
 					<RouteLink to={link}>
 						<button type="button">More info</button>
