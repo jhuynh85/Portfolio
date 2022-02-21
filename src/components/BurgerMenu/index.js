@@ -26,7 +26,7 @@ const BurgerMenu = (props) => {
 				<i className="fab fa-2x fa-github" />
 			</a>
 			<a
-				href="https://www.linkedin.com/in/phuc-huynh/"
+				href="https://www.linkedin.com/in/joehuynh/"
 				target="_blank"
 				rel="noopener noreferrer">
 				<i className="fab fa-2x fa-linkedin-in" />

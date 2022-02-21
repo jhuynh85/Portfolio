@@ -105,7 +105,7 @@ const Home = ({ yPosition }) => {
 								<i className="fab fa-3x fa-github-square" />
 							</a>
 							<a
-								href="https://www.linkedin.com/in/phuc-huynh/"
+								href="https://www.linkedin.com/in/joehuynh/"
 								target="_blank"
 								rel="noopener noreferrer">
 								<i className="fab fa-3x fa-linkedin" />
