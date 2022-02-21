@@ -25,14 +25,14 @@ class Main extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			yPosition: 0
+			yPosition: 0,
 		};
 	}
 
 	componentDidMount() {
 		window.addEventListener("scroll", this.handleScroll, {
 			capture: false,
-			passive: true
+			passive: true,
 		});
 	}
 
@@ -49,7 +49,7 @@ class Main extends Component {
 	};
 
 	// Updates y position (ie. when a user has scrolled down)
-	updateYPosition = newYPosition => {
+	updateYPosition = (newYPosition) => {
 		this.setState({ yPosition: newYPosition });
 	};
 

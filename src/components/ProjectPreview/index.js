@@ -3,7 +3,7 @@ import { Link as RouteLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./ProjectPreview.scss";
 
-const PortfolioProject = props => {
+const PortfolioProject = (props) => {
 	const { imgSrc, project, link } = props;
 	const { name, description, github, web } = project;
 	return (
@@ -38,8 +38,8 @@ PortfolioProject.propTypes = {
 		name: PropTypes.string,
 		description: PropTypes.string,
 		github: PropTypes.string,
-		web: PropTypes.string
-	})
+		web: PropTypes.string,
+	}),
 };
 
 export default PortfolioProject;

@@ -5,7 +5,7 @@ import "./Navbar.scss";
 
 import { LINKS } from "../../assets/js/constants";
 
-const Navbar = props => {
+const Navbar = (props) => {
 	const { fade } = props;
 	return (
 		<div
@@ -14,7 +14,7 @@ const Navbar = props => {
 			}`}>
 			<div className="logo-text" />
 			<ul>
-				{LINKS.map(link => (
+				{LINKS.map((link) => (
 					<Link key={link} to={link} smooth offset={-50} duration={250}>
 						<li>{link}</li>
 					</Link>
@@ -25,7 +25,7 @@ const Navbar = props => {
 };
 
 Navbar.propTypes = {
-	fade: PropTypes.bool
+	fade: PropTypes.bool,
 };
 
 export default Navbar;

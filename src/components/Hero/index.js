@@ -7,7 +7,7 @@ import wallpaperForeground from "../../assets/images/wallpaper-foreground-2160x1
 import wallpaperForegroundCompressed from "../../assets/images/wallpaper-foreground-2160x1100-compressed.webp";
 import wallpaperBackground from "../../assets/images/wallpaper-background-2160x1100-compressed.jpg";
 
-const Hero = props => {
+const Hero = (props) => {
 	const { yPosition } = props;
 	return (
 		<div className="hero">
@@ -37,7 +37,7 @@ const Hero = props => {
 };
 
 Hero.propTypes = {
-	yPosition: PropTypes.number
+	yPosition: PropTypes.number,
 };
 
 export default Hero;

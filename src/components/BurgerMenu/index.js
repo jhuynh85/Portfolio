@@ -5,10 +5,10 @@ import "./BurgerMenu.scss";
 
 import { LINKS } from "../../assets/js/constants";
 
-const BurgerMenu = props => {
+const BurgerMenu = (props) => {
 	return (
 		<Menu {...props}>
-			{LINKS.map(link => (
+			{LINKS.map((link) => (
 				<Link
 					to={link}
 					smooth

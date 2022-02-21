@@ -1,4 +1,4 @@
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const webpack = require("webpack");
 const common = require("./webpack.common.js");
 
@@ -7,9 +7,9 @@ module.exports = merge(common, {
 	devtool: "inline-source-map",
 	devServer: {
 		historyApiFallback: true,
-		contentBase: "./dist",
+		static: "./dist",
 		compress: true,
-		hot: true
+		hot: true,
 	},
-	plugins: [new webpack.HotModuleReplacementPlugin()]
+	plugins: [new webpack.HotModuleReplacementPlugin()],
 });
